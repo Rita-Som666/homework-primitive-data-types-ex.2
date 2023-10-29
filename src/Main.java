@@ -1,13 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        int bill1 = 200;
-        int bill2 = 3600;
+        int start_bill = 200;
+        int refill = 3600;
         int bonus;
-        if (bill2 > 1000) {
-            bonus = bill2 / 100;
+        if (refill > 1000) {
+            bonus = refill / 100;
         } else {
             bonus = 0;
         }
-        System.out.println("Ваша сумма пополнения " + bill2 + " Ваши бонусы " + bonus + " Ваш баланс " + (bill1 + bill2 + bonus));
+        System.out.println("Ваша сумма пополнения " + refill + " Ваши бонусы " + bonus + " Ваш баланс " + (start_bill + refill + bonus));
     }
 }
